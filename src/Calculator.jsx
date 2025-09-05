@@ -77,7 +77,7 @@ const evalRPN = (rpn) => {
         case "+": v = a + b; break;
         case "-": v = a - b; break;
         case "*": v = a * b; break;
-        case "/": if (b === 0) throw new Error("Division by zero"); v = a / b; break;
+        case "/": v = a / b; break;
         default: throw new Error("Unknown op");
       }
       st.push(v);
